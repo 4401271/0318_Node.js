@@ -19,7 +19,7 @@ app.get('/food/fruits/:id', (req, res)=>{
     res.send(`开始访问美食->水果->第${req.params.id}款水果....`)
 })
 
-
+//设置监听
 app.listen('8080', (err)=>{
     if(!err){
         console.log("http://localhost:8080成功启动....")
