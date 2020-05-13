@@ -16,6 +16,7 @@ app.get('/login/user', (req, res)=>{
 })
 //参数路由
 app.get('/food/fruits/:id', (req, res)=>{
+    //params获得的是gte请求参数路由中的参数
     res.send(`开始访问美食->水果->第${req.params.id}款水果....`)
 })
 
